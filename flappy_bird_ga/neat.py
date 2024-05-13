@@ -21,7 +21,7 @@ class NeatBird(Bird):
     def tick(self):
         features = np.array([self.v, self.cb_x/288, self.cb_y/512])
         a = self.nn.predict(features)
-        if (a[0] > 0.5): self.v += 2
+        if (a[0] > 0.5): self.v += 1
 
     def update(self):
         if not self.alive: return

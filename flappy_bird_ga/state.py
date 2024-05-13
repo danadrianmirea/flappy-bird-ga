@@ -25,7 +25,7 @@ class Bird:
         self.sprite = pygame.transform.scale2x(sheet.image_at((31,491,17,12)))
         self.v = 0
         self.d = 0
-        self.g = 1
+        self.g = 0.5
         self.alive = True
 
     def tick(self):
