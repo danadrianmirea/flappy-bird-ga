@@ -1,0 +1,20 @@
+[project]
+name = "flappy-bird-ga"
+description = "Genetic algorithm to play Flappy Bird"
+version = "0.1.0"
+
+dependencies = [
+    "pygame",
+    "numpy",
+    "neatpy"
+]
+
+[tool.setuptools]
+py-modules = []
+
+[project.optional-dependencies]
+dev = [
+    "tox",
+    "pre-commit",
+    "bump2version"
+]
